@@ -1,61 +1,74 @@
-/* Retro Arcade Greenish Style */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Global Styles */
 body {
     margin: 0;
-    font-family: 'Press Start 2P', monospace; /* Retro arcade font */
-    background: #000; /* Black background */
-    color: #00ff00; /* Neon green text */
+    font-family: 'Press Start 2P', monospace;
+    background: #000;
+    color: #1aff1a; /* More green */
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-/* Container */
+.sign-out {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    color: #33ff33; /* Brighter green */
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* White shadow */
+    transition: all 0.3s ease;
+}
+
+.sign-out:hover {
+    color: #66ff66;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
     padding: 2rem;
 }
 
-/* Header */
 header {
     margin-bottom: 2rem;
 }
 
 .neon-title {
     font-size: 2.5rem;
-    color: #00ff00; /* Bright neon green */
-    text-shadow: 0 0 3px #00ff00, 0 0 8px #00ff00, 0 0 12px #00ff00;
+    color: #00ff00; /* Pure green */
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(0, 255, 0, 0.8); /* White and green shadow mix */
 }
 
 .tagline {
     font-size: 1rem;
-    color: #66ff66; /* Softer green for contrast */
+    color: #33ff33; /* Bright green */
     margin-top: 0.5rem;
-    text-shadow: 0 0 2px #66ff66, 0 0 6px #66ff66;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.7); /* Subtle white shadow */
 }
 
-/* Main Content */
 .card {
-    background: rgba(0, 50, 0, 0.8); /* Dark greenish translucent box */
-    border: 2px solid #00ff00; /* Neon green border */
+    background: rgba(0, 40, 0, 0.8);
+    border: 2px solid #00ff00;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 0 5px #00ff00;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5), 0 0 8px rgba(0, 255, 0, 0.3); /* White and green shadow */
     max-width: 400px;
     width: 90%;
 }
 
 .intro {
     font-size: 0.9rem;
-    color: #ccffcc; /* Light green for body text */
+    color: #4dff4d; /* Light green */
     line-height: 1.6;
 }
 
-/* Links Column */
 .links-column {
     display: flex;
     flex-direction: column;
@@ -67,14 +80,13 @@ header {
     font-size: 1rem;
     text-decoration: none;
     color: #000;
-    background: #00ff00; /* Bright neon green button */
+    background: #00ff00; /* Pure green */
     border: 2px solid #00ff00;
     padding: 0.8rem 1rem;
     border-radius: 5px;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    text-shadow: 0 0 3px #00ff00, 0 0 8px #00ff00;
-    box-shadow: 0 0 8px #00ff00, 0 0 15px #00ff00;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.7), 0 0 8px rgba(0, 255, 0, 0.5); /* White and green shadow */
     display: block;
     width: 100%;
     max-width: 300px;
@@ -82,18 +94,17 @@ header {
 }
 
 .neon-button:hover {
-    background: #000; /* Invert colors on hover */
+    background: #000;
     color: #00ff00;
-    box-shadow: 0 0 12px #00ff00, 0 0 18px #00ff00;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8), 0 0 12px rgba(0, 255, 0, 0.6); /* Enhanced white and green shadow */
 }
 
-/* Footer */
 footer {
     margin-top: 2rem;
 }
 
 .footer-text {
     font-size: 0.8rem;
-    color: #66ff66; /* Softer green */
-    text-shadow: 0 0 2px #66ff66, 0 0 6px #66ff66;
+    color: #33ff33; /* Bright green */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.6); /* Subtle white shadow */
 }

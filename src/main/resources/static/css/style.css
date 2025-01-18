@@ -1,10 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: url(https://picsum.photos/3000/2000/?image=1015);
+  font-family: 'Courier New', Courier, monospace;
+  background: url('https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-161363.jpg?t=st=1737204476~exp=1737208076~hmac=8bc3211eccf4ff9741a9dfbbecef133c259f6e866cb74b54fa0ca71f7342c2fc&w=1060') no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 body::before {
@@ -14,27 +13,31 @@ body::before {
   left: 0;
   width: 25%;
   height: 100%;
-  background-color: #03a9f4;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better contrast */
 }
 
 .form {
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
   min-height: 400px;
-  background-color: #fff;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for form */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
   padding: 50px;
   box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #00ff00; /* Green border for hacker theme */
 }
 
 .form h2 {
-  color: #777;
+  color: #00ff00;
   margin: 0 0 40px;
   padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: center;
 }
 
 .form .input-box {
@@ -46,18 +49,19 @@ body::before {
   width: 100%;
   font-size: 16px;
   border: none;
-  border-bottom: 2px solid #777;
+  border-bottom: 2px solid #00ff00; /* Green bottom border for input */
   outline: none;
   padding: 10px;
   padding-left: 30px;
   box-sizing: border-box;
   font-weight: bold;
-  color: #777;
+  color: #00ff00; /* Green text */
+  background-color: transparent;
 }
 
 .form .input-box input:focus,
 .form .input-box input:valid {
-  border-bottom-color: #03a9f4;
+  border-bottom-color: #ff6347; /* Red focus border */
 }
 
 .form .input-box .fa {
@@ -65,31 +69,35 @@ body::before {
   top: 8px;
   left: 5px;
   font-size: 18px;
-  color: #777;
+  color: #00ff00;
 }
 
 .form .input-box input[type="submit"] {
   border: none;
   cursor: pointer;
-  background-color: #03a9f4;
-  color: #fff;
+  background-color: #00ff00;
+  color: #000;
   font-weight: bold;
   transition: 0.5s;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .form .input-box input[type="submit"]:hover {
-  background-color: #ff4987;
+  background-color: #ff6347; /* Hover effect in red */
 }
 
 .form a {
   text-decoration: none;
-  color: #777;
+  color: #00ff00;
   margin-top: 20px;
   font-weight: bold;
   display: inline-block;
   transition: 0.5s;
+  text-align: center;
 }
 
 .form a:hover {
-  color: #ff4987;
+  color: #ff6347; /* Red color on hover */
 }
